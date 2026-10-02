@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+      url: jdbc:mysql://localhost:3306/tienda?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      username: root
+      password:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+        format-sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+    port: 8080
